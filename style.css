@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins'
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 150px;
+    padding-right: 150px;
+    background: #f9fbfd;
+}
+
+.header-button {
+    display: none;
+}
+
+.header-button button {
+    background-color: #1ece7a;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+
+button.button2 {
+    background-color: white;
+    color: #1ece7a;
+    border: #1ece7a 1px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 5px;
+}
+
+section {
+    padding: 50px 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 0.8;
+    color: #02073e;
+    vertical-align: top;
+}
+
+.logo-two {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar {
+    position: relative;
+    display: flex;
+}
+
+.navbar a {
+    font-size: 15px;
+    line-height: 33px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #02073e;
+}
+
+.navbar a:hover {
+    color: rgb(19, 18, 18);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home {
+    background: #f9fbfd;
+}
+
+.home-text {
+    font-size: 33px;
+    font-weight: 600;
+    color: #02073e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -1.375px;
+    line-height: 80px;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.home-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image img {
+    height: 400px;
+    border-radius: 10px;
+}
+
+.course {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.course h1 {
+    text-align: center;
+    font-size: 33px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #0f2137;
+    letter-spacing: -1.5px;
+}
+
+.course h6 {
+    text-align: center;
+    color: #858b91;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.channel {
+    display: flex;
+    width: 100%;
+}
+
+.channel-picture {
+    width: 10px;
+}
+
+.icon-picture {
+    height: 80px;
+    width: 80px;
+}
+
+.channel-text {
+    margin-left: 90px;
+}
+
+.channel-text h3 {
+    color: #0f2137;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.channel-text p {
+    font-size: 13px;
+    color: #343d48;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    margin-bottom: 5%;
+    padding: 20px 12px;
+}
+
+
+.projects {
+    margin: auto;
+    max-width: 1100px;
+    background: #f9fbfd;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.projects-container .website {
+    display: flex;
+    align-items: center;
+}
+
+.projects-container .website h3 {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #481053;
+}
+
+.projects-container .website h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 30px;
+}
+
+.projects-container .booking {
+    display: flex;
+    align-items: center;
+}
+
+.projects-container .booking h3 {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #481053;
+}
+
+.projects-container .booking h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 30px;
+}
+
+.projects-container .lifestyle {
+    display: flex;
+    align-items: center;
+}
+
+.projects-container .lifestyle h3 {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #481053;
+}
+
+.projects-container .lifestyle h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 30px;
+}
+
+.background-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #0F2137;
+    opacity: 0.6;
+}
+
+.background-image img {
+    max-width: 97%;
+    max-height: 97%;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: block;
+}
+
+.flexbox {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+    margin-top: 20px;
+    background-color: rgb(68, 19, 68);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexbox span img {
+    position: relative;
+    top: -78px;
+    left: -10px;
+    color: #fff;
+}
+
+.flexbox button {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+
+@media (max-width: 950px) {
+    header {
+        padding: 18px 4%;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .course {
+        max-width: 100%;
+    }
+
+    .background-image img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .projects-container {
+        display: none;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .image-one {
+        display: none;
+    }
+
+    .image-two {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .home-text {
+        margin-bottom: 50px;
+    }
+
+
+    .row {
+        flex-direction: column;
+    }
+
+    .course h1 {
+        font-size: 24px;
+    }
+
+    .icon-picture {
+        height: 60px;
+        width: 60px;
+    }
+
+    .channel-text {
+        margin-left: 65px;
+    }
+
+    .projects .course {
+        margin-bottom: 100px;
+    }
+
+    .flexbox1 {
+        margin-bottom: 20px;
+    }
+
+    .flexbox2 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .header-button {
+        display: block;
+    }
+
+    header {
+        padding: 11px 4%;
+        /* display: none; */
+    }
+
+    #menu-icon {
+        display: initial;
+        /* display: none; */
+    }
+
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(0, 0, 0 /10%);
+        transform: 0.2s ease;
+        text-align: center;
+    }
+
+    .navbar a {
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 2rem;
+        display: block;
+        color: #606c84;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .navbar a:hover {
+        color: rgb(45, 45, 68);
+        text-decoration: none;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+}
