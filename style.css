@@ -365,7 +365,9 @@ section {
         display: none;
     }
 
-
+    .flexbox2 {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -401,10 +403,6 @@ section {
 
     .flexbox1 {
         margin-bottom: 20px;
-    }
-
-    .flexbox2 {
-        display: none;
     }
 }
 
