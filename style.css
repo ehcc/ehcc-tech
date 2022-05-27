@@ -9,6 +9,10 @@
     font-family: 'poppins'
 }
 
+body {
+    margin: auto;
+    max-width: 1350px;
+}
 
 header {
     position: fixed;
@@ -109,7 +113,7 @@ section {
 }
 
 .home-text {
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 600;
     color: #02073e;
     display: flex;
@@ -118,7 +122,8 @@ section {
     text-align: center;
     letter-spacing: -1.375px;
     line-height: 80px;
-    margin-top: 110px;
+    /* margin-top: 100px; */
+    margin-top: -500px;
     margin-bottom: 30px;
 }
 
@@ -129,7 +134,7 @@ section {
 }
 
 .home-image img {
-    height: 400px;
+    height: 350px;
     border-radius: 10px;
 }
 
@@ -289,13 +294,6 @@ section {
     opacity: 0.6;
 }
 
-.background-image img {
-    max-width: 97%;
-    max-height: 97%;
-    margin-left: 500px;
-    margin-right: 500px;
-    display: block;
-}
 
 .flexbox {
     padding-top: 50px;
@@ -303,7 +301,7 @@ section {
     padding-right: 30px;
     padding-left: 30px;
     color: white;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: rgb(68, 19, 68);
     border-radius: 20px;
     display: flex;
@@ -327,6 +325,88 @@ section {
     font-family: 'poppins';
     font-weight: 600;
 }
+
+.icon-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1100;
+}
+
+.icon-image-one {
+    position: relative;
+    bottom: -200px;
+    right: -90px;
+
+}
+
+.icon-image-two {
+    position: relative;
+    bottom: -100px;
+    right: -1050px;
+}
+
+.icon-image-three {
+    position: relative;
+    bottom: -55px;
+    right: -1065px;
+}
+
+.icon-image-four {
+    position: relative;
+    top: 220px;
+    left: 120px;
+}
+
+.icon-image-four img {
+    width: 200px;
+}
+
+.icon-image-five {
+    position: relative;
+    bottom: 25px;
+    left: 120px;
+}
+
+.icon-image-six {
+    position: relative;
+    bottom: 65px;
+    left: 1000px;
+}
+
+.icon-image-six img {
+    width: 200px;
+}
+
+.icon-image-seven {
+    position: relative;
+    bottom: 325px;
+    left: 1180px;
+}
+
+.background-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: white;
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: #fff;
+    
+    
+}
+
 
 
 @media (max-width: 950px) {
@@ -372,7 +452,7 @@ section {
 
 @media (max-width: 800px) {
     .home-text h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .home-text {
@@ -457,3 +537,13 @@ section {
         flex-direction: column;
     }
 }
+
+    @media (max-width: 1350px) {
+        .home-text {
+            margin-top: 100px;
+        }
+
+        .icon-container {
+            display: none;
+        }
+    }

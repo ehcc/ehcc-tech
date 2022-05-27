@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,20 +29,27 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Our Projects</a></li>
             <li><a href="#join">Join Us</a></li>
-
-            <div class="header-button">
-                <button class="button1">Get Started</button>
-                <button class="button2">Sign In</button>
-            </div>
         </ul>
     </header>
 
-
     <!-- Second Navbar -->
-
 
     <!--Home-->
     <section class="home" id="home">
+
+
+
+        <div class="icon-container">
+            <div class="icon-image-one"><img src="./image/./Vector (2).png" alt=""></div>
+            <div class="icon-image-two"><img src="./image/./Vector (3).png" alt=""></div>
+            <div class="icon-image-three"><img src="./image/./Vector (7).png" alt=""></div>
+            <div class="icon-image-four"><img src="./image/Vectors.png" alt=""></div>
+            <div class="icon-image-five"><img src="./image/Vector (6).png" alt=""></div>
+            <div class="icon-image-six"><img src="./image/Vector (1).png" alt=""></div>
+            <div class="icon-image-seven"><img src="./image/Vector-5.png" alt=""></div>
+        </div>
+
+
         <div class="home-text">
             <h1>Welcome to the <br> Enthronement Assembly <br> Technology Department</h1>
         </div>
@@ -145,27 +154,41 @@
             <h6>Introducing all screen details</h6>
         </div>
         <div class="projects-container">
-            <div class="website"><img src="./image/pIcon1.jfif" alt=""> <a href="">
-                    <h3>
-                        Enthronement Website
-                    </h3>
-                </a></div>
+            <div class="website"><img src="./image/pIcon1.jfif" alt="">
+                <h3>
+                    <a href="#first-slide">Enthronement Website</a>
+                </h3>
+            </div>
 
-            <div class="booking"><img src="./image/pIcon3.jfif" alt=""> <a href="">
-                    <h3>
-                        Bus Booking
-                    </h3>
-                </a></div>
+            <div class="booking"><img src="./image/pIcon3.jfif" alt="">
+                <h3>
+                    <a href="#second-slide">Bus Booking</a>
+                </h3>
+            </div>
 
-            <div class="lifestyle"><img src="./image/pIcon2.jfif" alt=""> <a href="">
-                    <h3>
-                        Enthronement Lifestyle
-                    </h3>
-                </a></div>
+            <div class="lifestyle"><img src="./image/pIcon2.jfif" alt="">
+                <h3>
+                    <a href="#third-slide">Enthronement Lifestyle</a>
+                </h3>
+            </div>
+            <hr>
         </div>
 
         <div class="background-image">
-            <img src="./image/Browser 2.png" alt="">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" id="first-slide"><img src="./image/Browser 2.png" alt=""></div>
+                    <div class="swiper-slide" id="second-slide"><img src="./image/Browser 2.png" alt=""></div>
+                    <div class="swiper-slide" id="third-slide"><img src="./image/Browser 2.png" alt=""></div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
 
         <!--Join us-->
@@ -181,12 +204,31 @@
 
             </div>
             <div class="flexbox3">
-                <a href="https://docs.google.com/forms/d/1NRvjlx7-X6dv0f4FjSXctIWkXCp4j1t1QmKTGurjegc/edit"><button>Join Now</button></a>
+                <a href="https://docs.google.com/forms/d/1NRvjlx7-X6dv0f4FjSXctIWkXCp4j1t1QmKTGurjegc/edit"><button>Join
+                        Now</button></a>
             </div>
         </div>
         <!-- Copyright -->
         <p class="copyright">Copyright &copy; 2022 Enthronement Assembly. All rights reserved</p>
     </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
 </body>
 
 </html>
