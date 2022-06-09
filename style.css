@@ -420,6 +420,11 @@ position: relative;
     background: white;
 }
 
+.background-image > img {
+    width: 100%;
+    height: 100%;
+}
+
 .swiper {
     width: 100%;
     height: fit-content;
@@ -431,7 +436,7 @@ position: relative;
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-    color: rgb(126, 92, 92);
+    color: rgb(97, 117, 231);
     
     
 }
