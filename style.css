@@ -231,33 +231,9 @@ section {
     align-items: center;
 }
 
-.projects-container .website h3 {
-    margin-left: 10px;
-    font-size: 18px;
-    color: #481053;
-}
-
-.projects-container .website h3:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 30px;
-}
-
 .projects-container .booking {
     display: flex;
     align-items: center;
-}
-
-.projects-container .booking h3 {
-    margin-left: 10px;
-    font-size: 18px;
-    color: #481053;
-}
-
-.projects-container .booking h3:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 30px;
 }
 
 .projects-container .lifestyle {
@@ -265,16 +241,47 @@ section {
     align-items: center;
 }
 
-.projects-container .lifestyle h3 {
+.projects-container .booking>a {
     margin-left: 10px;
     font-size: 18px;
-    color: #481053;
+    font-weight: 500;
+    color: #000;
 }
 
-.projects-container .lifestyle h3:hover {
+.projects-container .lifestyle>a {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.projects-container .website>a {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.projects-container .website a:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 30px;
+    color: #481053;
+}
+
+.projects-container .booking a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 30px;
+    color: #481053;
+}
+
+.projects-container .lifestyle a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 30px;
+    color: #481053;
 }
 
 .background-image {
@@ -304,7 +311,6 @@ section {
     padding-right: 30px;
     padding-left: 30px;
     color: white;
-    margin-top: 50px;
     background-color: rgb(68, 19, 68);
     border-radius: 20px;
     display: flex;
@@ -329,8 +335,8 @@ section {
     font-weight: 600;
 }
 
-.icon-container > div {
-position: relative;
+.icon-container>div {
+    position: relative;
 }
 
 .icon-image-one {
@@ -420,7 +426,7 @@ position: relative;
     background: white;
 }
 
-.background-image > img {
+.background-image>img {
     width: 100%;
     height: 100%;
 }
@@ -430,15 +436,63 @@ position: relative;
     height: fit-content;
 }
 
+.swiper-slide {
+    display: flex;
+    align-items: center;
+}
+
 .swiper-slide img {
+    max-width: 100%;
+}
+
+.swiper-slide>#first-slide {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+
+.swiper-slide>#second-slide {
     width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.third-slide-background {
+    background-color: #f9fbfd;
+}
+
+.slider-image {
+    width: 500px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.slider-text h1 {
+    margin-left: 70px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #02073E;
+}
+
+.slider-text p {
+    margin-left: 70px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 30px;
+    color: #343D48;
 }
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
     color: rgb(97, 117, 231);
-    
-    
 }
 
 
@@ -570,14 +624,40 @@ position: relative;
     .flexbox {
         flex-direction: column;
     }
+
+    .slider-text h1 {
+        font-size: 20px;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+    }
 }
 
-    @media (max-width: 1150px) {
-        .home-text {
-            margin-top: 100px;
-        }
-
-        .icon-container {
-            display: none;
-        }
+@media (max-width: 1150px) {
+    .home-text {
+        margin-top: 100px;
     }
+
+    .icon-container {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-text h1 {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .slider-text p {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .slider-image {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+}
